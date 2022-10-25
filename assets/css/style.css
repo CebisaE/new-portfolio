@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "lora-regular", serif;
 }
 
 /*--------------------------------------------------------------
@@ -66,12 +66,15 @@ h6 {
 }
 
 #header h1 {
-  font-size: 48px;
   margin: 0;
   padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-size: 3.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-family: "lora-regular", serif;
 }
 
 #header h1 a,
@@ -87,7 +90,7 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-#header h2 span {
+#header h2 a {
   color: #fff;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
@@ -181,6 +184,52 @@ h6 {
   }
 }
 
+ .intro-position {
+	font-family: "lora-regular", serif;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+ .intro-position span {
+	display: inline-block;
+}
+ .intro-position span::after {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 8px 0 14px;
+	color: #18d26e;
+}
+ .intro-position span:first-child::before {
+	content: "|";
+	text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	color: #18d26e;
+}
+
+@media only screen and (max-width:768px) {
+	 .intro-position {
+		font-size: 1.3rem;
+	}
+}
+
+
+@media only screen and (max-width:600px) {
+ .intro-position {
+		font-size: 1.2rem;
+	}
+	 .intro-position span {
+		padding: 0 .6rem;
+	}
+	 .intro-position span::before, .intro-content .intro-position span::after {
+		display: none !important;
+	}
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -214,10 +263,11 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "lora-regular", serif;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -364,7 +414,7 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  /* font-size: 14px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -372,7 +422,14 @@ section .container {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; */
+  font-family: "lora-regular", serif;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .section-title h2::after {
@@ -385,13 +442,20 @@ section .container {
 }
 
 .section-title p {
-  margin: 0;
+  /* margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #fff; */
+  font-family: "lora-regular", serif;
+	font-size: 2.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 /*--------------------------------------------------------------
@@ -428,7 +492,24 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
+.fst-italic{
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.col-lg-6{
+  font-family: "lora-regular", serif;
+	font-size: 0.7rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -465,10 +546,13 @@ section .container {
 }
 
 .counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 /*--------------------------------------------------------------
@@ -482,13 +566,13 @@ section .container {
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .skills .progress .skill .val {
@@ -560,10 +644,14 @@ section .container {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .testimonials .testimonial-item h4 {
@@ -592,7 +680,14 @@ section .container {
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
+  
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -733,8 +828,12 @@ section .container {
 }
 
 .services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
 }
 
@@ -780,10 +879,13 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
   font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
@@ -866,15 +968,26 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
-  color: #fff;
+  /* font-size: 20px; */
+  /* color: #fff; */
   font-weight: 600;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   padding: 0;
   margin: 0;
 }
@@ -1010,7 +1123,14 @@ section .container {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-family: "lora-regular", serif;
+	font-size: 1.5rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	/* color: #FFFFFF; */
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
@@ -1019,8 +1139,13 @@ section .container {
 .contact .info-box p {
   padding: 0;
   color: #fff;
-  line-height: 24px;
-  font-size: 14px;
+  font-family: "lora-regular", serif;
+	font-size: 0.9rem;
+	line-height: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: #FFFFFF;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   margin: 0 0 0 68px;
 }
 
