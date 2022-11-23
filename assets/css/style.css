@@ -495,7 +495,7 @@ section .container {
 .fst-italic{
   font-family: "Poppins", sans-serif;
 	font-size: 0.9rem;
-	line-height: 1.1rem;
+	line-height:2.1rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	color: #FFFFFF;
@@ -509,6 +509,20 @@ section .container {
 	letter-spacing: .2rem;
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#about .social-link a {
+  font-size: 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: rgba(255, 255, 255, 0.1);
+  color: #18d26e;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 /*--------------------------------------------------------------
 # Counts
@@ -633,7 +647,7 @@ section .container {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 50%;
+  border-radius: 100%;
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
@@ -659,7 +673,7 @@ section .container {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(255, 255, 255, 0.25);
+  color:#18d26e ;
   font-size: 26px;
 }
 
@@ -1172,7 +1186,7 @@ section .container {
 .contact .php-email-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
+  background:#FFFFFF ;
   text-align: left;
   padding: 15px;
   font-weight: 600;
